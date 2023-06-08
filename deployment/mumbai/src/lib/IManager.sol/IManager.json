@@ -1,0 +1,403 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IManager",
+  "sourceName": "src/lib/IManager.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "AgreementActivated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "AgreementCancelled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "AgreementChallenged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "contractor",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "contractee",
+          "type": "address"
+        }
+      ],
+      "name": "AgreementCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "agreement",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "FundsDeposited",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "agreement",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "FundsMigrated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "contractorAmount",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "contracteeAmount",
+          "type": "uint128"
+        }
+      ],
+      "name": "FundsSplitted",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "activateAgreement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "cancelAgreement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "challengeAgreement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "claimProtocolFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint128",
+              "name": "beginningDate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "maturityDate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "paymentCycleDuration",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "paymentCycleAmount",
+              "type": "uint128"
+            },
+            {
+              "internalType": "address",
+              "name": "underlayingToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "contractor",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "descriptionURI",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct IManager.AgreementCreationParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "createAgreement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "freezeAgreements",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAgreementParameters",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "beginningDate",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "maturityDate",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "paymentCycleDuration",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "paymentCycleAmount",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "establishmentFeeRate",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "penalizationAmount",
+          "type": "uint128"
+        },
+        {
+          "internalType": "address",
+          "name": "underlayingToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "contractor",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "contractee",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "descriptionURI",
+          "type": "string"
+        },
+        {
+          "internalType": "uint128",
+          "name": "currentMigration",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAgreementState",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "escrowedFunds",
+          "type": "uint128"
+        },
+        {
+          "internalType": "bool",
+          "name": "closed",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "challenged",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "active",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "establishmentFeeRate",
+          "type": "uint128"
+        }
+      ],
+      "name": "setEstablishmentFeeRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "agreementID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint128",
+          "name": "contractorPercentage",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "contracteePercentage",
+          "type": "uint128"
+        }
+      ],
+      "name": "splitFunds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unfreezeAgreements",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,76 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Errors",
+  "sourceName": "src/lib/Errors.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "MG_ADDRESS_ZERO",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_AGREEMENT_ALREADY_CHALLENGED",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_AGREEMENT_NOT_PENDING",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_AMOUNT_TOO_HIGH",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_CONTRACTOR_EQUALS_CONTRACTEE",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_FUNDS_ALREADY_SECURED",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_INVALID_MATURITY_DATE",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_INVALID_MIGRATION_PERIOD",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_INVALID_PERCENTAGES",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_INVALID_TOKEN",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_NOT_ONGOING",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_PAST_BEGINNING_DATE",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MG_UNAUTHORIZED",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206a50945f702153efc175c14851d2ce1dd0406b4065a401d9cfaf07a3e6b1384564736f6c63430008090033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206a50945f702153efc175c14851d2ce1dd0406b4065a401d9cfaf07a3e6b1384564736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

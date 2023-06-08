@@ -1,0 +1,37 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Roles",
+  "sourceName": "src/lib/Roles.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "GOVERNANCE_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "KEEPER_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60d6610039600b82828239805160001a60731461002c57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe7300000000000000000000000000000000000000003014608060405260043610603d5760003560e01c8063364bc15a146042578063f36c8f5c14607a575b600080fd5b60687ffc8737ab85eb45125971625a9ebdb75cc78e01d5c1fa80c4c6e5203f47bc4fab81565b60405190815260200160405180910390f35b60687f71840dc4906352362b0cdaf79870196c8e42acafade72d5d5a6d59291253ceb18156fea2646970667358221220992ecaf33c90b884a4d3dd1babe5c460cfcc328e573b9647018183ff98302b9064736f6c63430008090033",
+  "deployedBytecode": "0x7300000000000000000000000000000000000000003014608060405260043610603d5760003560e01c8063364bc15a146042578063f36c8f5c14607a575b600080fd5b60687ffc8737ab85eb45125971625a9ebdb75cc78e01d5c1fa80c4c6e5203f47bc4fab81565b60405190815260200160405180910390f35b60687f71840dc4906352362b0cdaf79870196c8e42acafade72d5d5a6d59291253ceb18156fea2646970667358221220992ecaf33c90b884a4d3dd1babe5c460cfcc328e573b9647018183ff98302b9064736f6c63430008090033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
